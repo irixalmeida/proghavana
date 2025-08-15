@@ -126,21 +126,54 @@
                 </div>
 
                 <!-- Pricing Section -->
-                <div class="bg-white bg-opacity-95 rounded-3xl p-6 md:p-8 max-w-2xl mx-auto glass-effect">
-                    <div class="text-havana-dark">
-                        <p class="text-lg font-semibold mb-2">500 ML CADA</p>
-                        <div class="line-through text-red-500 text-xl md:text-2xl mb-2">DE R$ 394,00</div>
-                        <div class="pricing-text text-3xl md:text-4xl lg:text-5xl font-bold text-havana-brown mb-4">
-                            12x de R$ 16,01
+                <div class="bg-white bg-opacity-95 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto glass-effect">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Oferta 1 - Original -->
+                        <div class="text-havana-dark border-2 border-havana-gold rounded-2xl p-6 bg-gradient-to-br from-havana-cream to-white">
+                            <div class="text-center mb-4">
+                                <div class="bg-havana-gold text-white px-4 py-2 rounded-full text-sm font-bold inline-block mb-3">
+                                    OFERTA 1 - FRASCO
+                                </div>
+                            </div>
+                            <p class="text-lg font-semibold mb-2 text-center">500 ML</p>
+                            <div class="line-through text-red-500 text-xl md:text-2xl mb-2 text-center">DE R$ 394,00</div>
+                            <div class="pricing-text text-3xl md:text-4xl font-bold text-havana-brown mb-4 text-center">
+                                12x de R$ 16,01
+                            </div>
+                            <div class="text-2xl md:text-3xl font-bold text-green-600 mb-6 text-center">
+                                OU R$ 150,00 À VISTA
+                            </div>
+                            <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
+                               class="btn-main block text-center bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-all duration-300 btn-glow hover-scale btn-pulse">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                AGENDE A SUA ENTREGA!
+                            </a>
                         </div>
-                        <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-600 mb-6">
-                            OU R$ 150,00 À VISTA
+
+                        <!-- Oferta 2 - Nova -->
+                        <div class="text-havana-dark border-2 border-red-500 rounded-2xl p-6 bg-gradient-to-br from-red-50 to-orange-50 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 text-xs font-bold transform rotate-12 translate-x-2 -translate-y-1">
+                                OFERTA ESPECIAL
+                            </div>
+                            <div class="text-center mb-4 mt-4">
+                                <div class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold inline-block mb-3">
+                                    OFERTA 2 - KIT DUPLO
+                                </div>
+                            </div>
+                            <p class="text-lg font-semibold mb-2 text-center">2 FRASCOS DE 500 ML</p>
+                            <div class="line-through text-red-500 text-xl md:text-2xl mb-2 text-center">DE R$ 788,00</div>
+                            <div class="pricing-text text-3xl md:text-4xl font-bold text-red-600 mb-4 text-center">
+                                12x de R$ 21,02
+                            </div>
+                            <div class="text-2xl md:text-3xl font-bold text-green-600 mb-6 text-center">
+                                OU R$ 197,00 À VISTA
+                            </div>
+                            <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
+                               class="btn-main block text-center bg-red-500 hover:bg-red-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-all duration-300 btn-glow hover-scale btn-pulse">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                AGENDE KIT DUPLO!
+                            </a>
                         </div>
-                        <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
-                           class="btn-main inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-all duration-300 btn-glow hover-scale btn-pulse">
-                            <i class="fas fa-shopping-cart mr-2"></i>
-                            AGENDE A SUA ENTREGA AQUI!
-                        </a>
                     </div>
                 </div>
             </div>
@@ -474,11 +507,20 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
-                           class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
-                            <i class="fas fa-shopping-cart mr-2"></i>
-                            AGENDE A SUA ENTREGA AQUI!
-                        </a>
+                        <!-- Botões de Compra com 2 Opções -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+                            <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
+                               class="bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 btn-glow hover-scale">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                1 FRASCO - R$ 150,00
+                            </a>
+                            <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
+                               class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 btn-glow hover-scale border-2 border-red-600">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                KIT 2 FRASCOS - R$ 197,00
+                            </a>
+                        </div>
+                        <p class="text-sm text-havana-cream opacity-90">Oferta Especial: Kit Duplo com desconto!</p>
                     </div>
                 </div>
             </div>
@@ -680,18 +722,62 @@
                         
                         <p class="text-lg mb-6 italic">A progressiva que garante liso perfeito por mais tempo com resultados de salão em casa!</p>
                         
-                        <div class="line-through text-red-500 text-2xl mb-2">DE R$ 394,00</div>
-                        <div class="text-4xl md:text-5xl font-bold text-havana-brown mb-4">
-                            12x de R$ 16,01
+                        <!-- Ofertas lado a lado -->
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <!-- Oferta 1 -->
+                            <div class="border-2 border-havana-gold rounded-xl p-4 bg-gradient-to-br from-havana-cream to-white">
+                                <div class="text-center mb-3">
+                                    <div class="bg-havana-gold text-white px-3 py-1 rounded-full text-xs font-bold">
+                                        1 FRASCO
+                                    </div>
+                                </div>
+                                <div class="line-through text-red-500 text-lg mb-2 text-center">DE R$ 394,00</div>
+                                <div class="text-2xl md:text-3xl font-bold text-havana-brown mb-2 text-center">
+                                    12x de R$ 16,01
+                                </div>
+                                <div class="text-xl md:text-2xl font-bold text-green-600 mb-4 text-center">
+                                    OU R$ 150,00 À VISTA
+                                </div>
+                                <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
+                                   class="block text-center bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 px-4 rounded-full text-sm transition-all duration-300 btn-glow hover-scale">
+                                    <i class="fas fa-shopping-cart mr-2"></i>
+                                    COMPRAR 1 FRASCO
+                                </a>
+                            </div>
+
+                            <!-- Oferta 2 - Kit Duplo -->
+                            <div class="border-2 border-red-500 rounded-xl p-4 bg-gradient-to-br from-red-50 to-orange-50 relative">
+                                <div class="absolute -top-2 -right-2 bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-full">
+                                    ESPECIAL
+                                </div>
+                                <div class="text-center mb-3 mt-2">
+                                    <div class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                        KIT 2 FRASCOS
+                                    </div>
+                                </div>
+                                <div class="line-through text-red-500 text-lg mb-2 text-center">DE R$ 788,00</div>
+                                <div class="text-2xl md:text-3xl font-bold text-red-600 mb-2 text-center">
+                                    12x de R$ 21,02
+                                </div>
+                                <div class="text-xl md:text-2xl font-bold text-green-600 mb-4 text-center">
+                                    OU R$ 197,00 À VISTA
+                                </div>
+                                <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
+                                   class="block text-center bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-full text-sm transition-all duration-300 btn-glow hover-scale">
+                                    <i class="fas fa-shopping-cart mr-2"></i>
+                                    COMPRAR KIT DUPLO
+                                </a>
+                            </div>
                         </div>
-                        <div class="text-3xl md:text-4xl font-bold text-green-600 mb-6">
-                            OU R$ 150,00 À VISTA
-                        </div>
-                        <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
-                           class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
-                            <i class="fas fa-shopping-cart mr-2"></i>
-                            AGENDE A SUA ENTREGA AQUI!
-                        </a>
+
+                        <!-- Botão Principal Mantido 
+                        <div class="text-center">
+                            <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
+                               class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                AGENDE A SUA ENTREGA AQUI!
+                            </a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -786,11 +872,20 @@
                 </div>
                 
                 <div class="text-center mt-12">
-                    <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
-                       class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
-                        <i class="fas fa-shopping-cart mr-2"></i>
-                        AGENDE A SUA ENTREGA AQUI!
-                    </a>
+                    <!-- Botões de Compra com 2 Opções -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+                        <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
+                           class="bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            1 FRASCO - R$ 150,00
+                        </a>
+                        <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
+                           class="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale border-2 border-red-600">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            KIT 2 FRASCOS - R$ 197,00
+                        </a>
+                    </div>
+                    <p class="text-lg text-havana-dark font-semibold">Oferta Especial: Kit Duplo com desconto exclusivo!</p>
                 </div>
             </div>
         </div>
@@ -901,11 +996,23 @@
                 
                 <!-- Action Buttons -->
                 <div class="space-y-3">
+                    <!-- Primeira Opção -->
                     <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150" 
                        target="_blank" 
                        class="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 border-2 border-red-700">
                         <i class="fas fa-shopping-cart text-lg"></i>
-                        <span>COMPRAR AGORA</span>
+                        <span>1 FRASCO - R$ 150,00</span>
+                    </a>
+                    
+                    <!-- Segunda Opção - Kit Duplo -->
+                    <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
+                       target="_blank" 
+                       class="w-full bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 border-2 border-green-700 relative">
+                        <div class="absolute -top-2 -right-2 bg-yellow-400 text-black px-2 py-1 text-xs font-bold rounded-full">
+                            OFERTA
+                        </div>
+                        <i class="fas fa-shopping-cart text-lg"></i>
+                        <span>KIT 2 FRASCOS - R$ 197,00</span>
                     </a>
                     
                     <button onclick="toggleWhatsAppChat()" 
