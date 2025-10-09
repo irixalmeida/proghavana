@@ -140,3 +140,4 @@ Este é um site moderno e elegante criado para a Progressiva Havana, com foco em
 - [ ] Adicionar PWA features
 - [ ] Integrar com CRM
 "# progressiva2" 
+"# progressiva2" 
