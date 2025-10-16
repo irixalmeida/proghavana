@@ -75,6 +75,44 @@
             box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
             transform: translateY(-2px);
         }
+        
+        .animate-scale {
+            animation: scaleIn 0.3s ease-out;
+        }
+        
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        /* Melhorias para o modal WhatsApp */
+        .whatsapp-modal-enter {
+            animation: modalEnter 0.3s ease-out;
+        }
+        
+        @keyframes modalEnter {
+            0% {
+                transform: translateY(-20px) scale(0.95);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        /* Responsividade adicional */
+        @media (max-width: 640px) {
+            .whatsapp-button-text {
+                font-size: 0.875rem;
+            }
+        }
     </style>
 
    <script defer src="https://cod.raadsoficial.com/code/3874-da9fcb57-c9b6-41fe-a58d-25773f38c273"></script>
@@ -159,7 +197,7 @@
                                aria-label="Comprar 1 frasco da Progressiva Havana"
                                class="btn-main block text-center bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-all duration-300 btn-glow hover-scale btn-pulse">
                                 <i class="fas fa-shopping-cart mr-2"></i>
-                                AGENDE A SUA ENTREGA!
+                                PAGUE NA ENTREGA - AGENDE A SUA ENTREGA!
                             </a>
                             <p class="text-xs text-gray-600 mt-2 text-center">O pagamento e a logística de entrega são processados com segurança pela plataforma Logzz.</p>
                         </div>
@@ -188,7 +226,7 @@
                                aria-label="Comprar kit duplo da Progressiva Havana"
                                class="btn-main block text-center bg-red-500 hover:bg-red-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-all duration-300 btn-glow hover-scale btn-pulse">
                                 <i class="fas fa-shopping-cart mr-2"></i>
-                                AGENDE KIT DUPLO!
+                                PAGUE NA ENTREGA - AGENDE KIT DUPLO!
                             </a>
                             <p class="text-xs text-gray-600 mt-2 text-center">O pagamento e a logística de entrega são processados com segurança pela plataforma Logzz.</p>
                         </div>
@@ -491,7 +529,7 @@
                    aria-label="Comprar Progressiva Havana"
                    class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
                     <i class="fas fa-shopping-cart mr-2"></i>
-                    QUERO TESTAR A PROGRESSIVA HAVANA!
+                    PAGUE NA ENTREGA - QUERO TESTAR A PROGRESSIVA HAVANA!
                 </a>
                 <p class="text-xs text-gray-600 mt-2">O pagamento e a entrega são realizados com segurança pela plataforma Logzz.*</p>
                 <p class="text-xs text-gray-500 italic mt-1">*Os resultados podem variar conforme o tipo de cabelo e o modo de aplicação.</p>
@@ -552,7 +590,7 @@
                                aria-label="Comprar 1 frasco da Progressiva Havana por R$ 150"
                                class="bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 btn-glow hover-scale">
                                 <i class="fas fa-shopping-cart mr-2"></i>
-                                🛍️ 1 Frasco - R$ 150,00
+                                PAGUE NA ENTREGA - 🛍️ 1 Frasco - R$ 150,00
                             </a>
                             <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
                                rel="noopener"
@@ -560,7 +598,7 @@
                                aria-label="Comprar kit duplo da Progressiva Havana por R$ 197"
                                class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 btn-glow hover-scale border-2 border-red-600">
                                 <i class="fas fa-shopping-cart mr-2"></i>
-                                🛍️ Kit com 2 Frascos - R$ 197,00
+                                PAGUE NA ENTREGA - 🛍️ Kit com 2 Frascos - R$ 197,00
                             </a>
                         </div>
                         <p class="text-sm text-havana-cream opacity-90">Oferta especial com desconto exclusivo!</p>
@@ -736,7 +774,7 @@
                            data-cta="checkout"
                            class="inline-block bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
                             <i class="fas fa-shopping-cart mr-2"></i>
-                            AGENDE A SUA ENTREGA AQUI!
+                            PAGUE NA ENTREGA - AGENDE A SUA ENTREGA AQUI!
                         </a>
                     </div>
                 </div>
@@ -797,7 +835,7 @@
                                    data-cta="checkout"
                                    class="block text-center bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-3 px-4 rounded-full text-sm transition-all duration-300 btn-glow hover-scale">
                                     <i class="fas fa-shopping-cart mr-2"></i>
-                                    COMPRAR 1 FRASCO
+                                    PAGUE NA ENTREGA - COMPRAR 1 FRASCO
                                 </a>
                             </div>
 
@@ -823,7 +861,7 @@
                                    data-cta="checkout"
                                    class="block text-center bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-full text-sm transition-all duration-300 btn-glow hover-scale">
                                     <i class="fas fa-shopping-cart mr-2"></i>
-                                    COMPRAR KIT DUPLO
+                                    PAGUE NA ENTREGA - COMPRAR KIT DUPLO
                                 </a>
                             </div>
                         </div>
@@ -950,14 +988,14 @@
                            data-cta="checkout"
                            class="bg-havana-gold hover:bg-yellow-500 text-havana-dark font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale">
                             <i class="fas fa-shopping-cart mr-2"></i>
-                            1 FRASCO - R$ 150,00
+                            PAGUE NA ENTREGA - 1 FRASCO - R$ 150,00
                         </a>
                         <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
                            rel="noopener"
                            data-cta="checkout"
                            class="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 btn-glow hover-scale border-2 border-red-600">
                             <i class="fas fa-shopping-cart mr-2"></i>
-                            KIT 2 FRASCOS - R$ 197,00
+                            PAGUE NA ENTREGA - KIT 2 FRASCOS - R$ 197,00
                         </a>
                     </div>
                     <p class="text-lg text-havana-dark font-semibold">Oferta Especial: Kit Duplo com desconto exclusivo!</p>
@@ -1028,126 +1066,126 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <button onclick="toggleWhatsAppChat()" 
-                aria-label="Abrir chat do WhatsApp"
-                class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover-scale flex items-center justify-center">
-            <i class="fab fa-whatsapp text-3xl"></i>
-        </button>
-    </div>
-
-    <!-- WhatsApp Chat Modal -->
-    <div id="whatsappModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden">
-            <!-- Header -->
-            <div class="bg-green-500 text-white p-4 flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                        <div class="flex justify-center md:justify-start items-center">
-                            <i class="fas fa-shield-alt text-2xl text-green-400 mr-2"></i>
-                            <span class="text-sm">SSL Certificado</span>
-                        </div>
-                        <div class="flex justify-center md:justify-start items-center">
-                            <i class="fas fa-truck text-2xl text-blue-400 mr-2"></i>
-                            <span class="text-sm">Pagamento na Entrega</span>
-                        </div>
-                    </div>
-                </div>
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
+        <div class="relative group">
+            <!-- Animação de pulso de fundo -->
+            <div class="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-75"></div>
+            
+            <!-- Botão principal -->
+            <button onclick="toggleWhatsAppChat()" 
+                    aria-label="Abrir chat do WhatsApp"
+                    class="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-4 sm:p-5 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group-hover:shadow-green-500/50 animate-bounce">
+                <i class="fab fa-whatsapp text-2xl sm:text-3xl drop-shadow-lg"></i>
+            </button>
+            
+            <!-- Badge NOVO -->
+            <div class="absolute -top-2 -left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
+                NOVO
             </div>
             
-            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
-                <p class="text-sm text-gray-400 mb-4">
-                    <strong>Aviso Legal:</strong> Este site não possui vínculo com o Facebook, Google ou qualquer empresa parceira. 
-                    Todas as marcas e logotipos exibidos são de propriedade de seus respectivos donos. O conteúdo tem caráter 
-                    informativo e não substitui recomendações profissionais.
-                </p>
-                
-                <div class="flex justify-center items-center space-x-4">
-                    <span class="text-havana-gold font-semibold">🔥 PAGAMENTO NA ENTREGA</span>
-                    <span class="text-green-400 font-semibold">✅ SITE SEGURO</span>
-                    <span class="text-blue-400 font-semibold">🚚 ENTREGA RÁPIDA</span>
-                </div>
+            <!-- Texto flutuante (aparece no hover) -->
+            <div class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none">
+                <div class="text-sm font-semibold">💬 Fale Conosco!</div>
+                <div class="text-xs opacity-90">Clique para conversar</div>
+                <!-- Seta do tooltip -->
+                <div class="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
             </div>
+            
+            <!-- Indicador de mensagens -->
+            <div class="absolute -top-1 -right-1 w-6 h-6 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center animate-bounce shadow-lg">
+                1
+            </div>
+        </div>
+    </div>
+
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <button onclick="toggleWhatsAppChat()" 
-                aria-label="Abrir chat do WhatsApp"
-                class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover-scale flex items-center justify-center">
-            <i class="fab fa-whatsapp text-3xl"></i>
-        </button>
-    </div>
-
     <!-- WhatsApp Chat Modal -->
-    <div id="whatsappModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden">
-            <!-- Header -->
-            <div class="bg-green-500 text-white p-4 flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                        <i class="fab fa-whatsapp text-2xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-lg">WhatsApp</h3>
-                        <p class="text-sm opacity-90">Atendimento Online</p>
-                    </div>
-                </div>
+    <div id="whatsappModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-auto overflow-hidden animate-scale">
+            <!-- Header Simples -->
+            <div class="bg-white p-4 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-800">WhatsApp</h3>
                 <button onclick="toggleWhatsAppChat()" 
                         aria-label="Fechar chat do WhatsApp"
-                        class="text-white hover:bg-white hover:bg-opacity-20 p-2 rounded-full transition-colors">
-                    <i class="fas fa-times text-xl"></i>
+                        class="text-gray-500 hover:text-gray-700 p-1 rounded-full transition-colors">
+                    <i class="fas fa-times text-lg"></i>
                 </button>
             </div>
             
-            <!-- Chat Content -->
+            <!-- Content exatamente como na imagem -->
             <div class="p-6">
-                <!-- Status Message -->
-                <div class="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-lg p-4 mb-4 shadow-sm">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-sm"></div>
-                        <span class="text-red-800 font-bold">Atendimento em alta demanda</span>
+                <!-- Background verde claro como na imagem -->
+                <div class="bg-gradient-to-b from-green-100 to-green-50 rounded-2xl p-6 text-center">
+                    <!-- Círculo verde com ícone de headset -->
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fas fa-headset text-white text-2xl"></i>
+                        </div>
                     </div>
-                    <p class="text-red-700 text-sm mt-2 font-medium"> Devido ao grande número de pedidos, nosso atendimento pode estar mais lento que o habitual.</p>
+                    
+                    <!-- Título principal -->
+                    <h4 class="text-xl font-bold text-green-800 mb-4">Atendimento em alta demanda</h4>
+                    
+                    <!-- Ícone e texto explicativo -->
+                    <div class="flex items-start justify-center mb-4">
+                        <i class="fas fa-clipboard-list text-green-600 mr-2 mt-1 flex-shrink-0"></i>
+                        <p class="text-green-700 text-sm text-left">
+                            Devido ao grande número de pedidos, nosso atendimento pode estar mais lento que o habitual.
+                        </p>
+                    </div>
+                    
+                    <!-- Check verde e garantia -->
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                        <span class="text-green-800 font-semibold">Garanta já o seu pedido agora mesmo!</span>
+                    </div>
+                    
+                    <!-- Botão verde principal -->
+                    <div class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-xl cursor-pointer transition-colors shadow-lg">
+                        FAZER PEDIDO AGORA
+                    </div>
                 </div>
                 
-                <!-- Message Preview -->
-                <div class="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 mb-4 border border-orange-200 shadow-sm">
-                    <p class="text-orange-800 text-sm mb-2 font-bold">Faça seu pedido com segurança!</p>
-                    <div class="bg-gradient-to-r from-red-100 to-orange-100 border-l-4 border-red-500 p-3 rounded shadow-sm">
-                        <p class="text-red-800 font-bold">Progressiva Havana com fórmula exclusiva. Clique no botão abaixo para garantir sua compra com segurança e entrega rápida.</p>
-                    </div>
-                </div>
-                
-                <!-- Action Buttons -->
-                <div class="space-y-3">
-                    <!-- Primeira Opção -->
+                <!-- Botões de compra -->
+                <div class="mt-6 space-y-3">
+                    <!-- Botão 1 FRASCO -->
                     <a href="https://entrega.logzz.com.br/pay/memzem3yr/progcreme150-nova" 
                        target="_blank"
                        rel="noopener"
                        data-cta="checkout"
-                       class="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 border-2 border-red-700">
+                       class="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-3">
                         <i class="fas fa-shopping-cart text-lg"></i>
-                        <span>1 FRASCO - R$ 150,00</span>
+                        <div class="text-center">
+                            <div class="text-xs opacity-90">PAGUE NA ENTREGA</div>
+                            <div class="text-base font-bold">1 FRASCO - R$ 150,00</div>
+                        </div>
                     </a>
                     
-                    <!-- Segunda Opção - Kit Duplo -->
+                    <!-- Botão KIT 2 FRASCOS -->
                     <a href="https://entrega.logzz.com.br/pay/memzem3yr/prog-2197" 
                        target="_blank"
                        rel="noopener"
                        data-cta="checkout"
-                       class="w-full bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 border-2 border-green-700 relative">
-                        <div class="absolute -top-2 -right-2 bg-yellow-400 text-black px-2 py-1 text-xs font-bold rounded-full">
+                       class="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-3 relative">
+                        <div class="absolute -top-2 -right-2 bg-yellow-400 text-black px-2 py-1 text-xs font-bold rounded-full shadow-md">
                             OFERTA
                         </div>
                         <i class="fas fa-shopping-cart text-lg"></i>
-                        <span>KIT 2 FRASCOS - R$ 197,00</span>
+                        <div class="text-center">
+                            <div class="text-xs opacity-90">PAGUE NA ENTREGA</div>
+                            <div class="text-base font-bold">KIT 2 FRASCOS - R$ 197,00</div>
+                        </div>
                     </a>
-                    
-                    <button onclick="toggleWhatsAppChat()" 
-                            class="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-lg transition-colors">
-                        Fechar
-                    </button>
+                </div>
+                
+                <!-- Informação de entrega -->
+                <div class="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <div class="flex items-center justify-center space-x-2 text-blue-800">
+                        <i class="fas fa-truck text-sm"></i>
+                        <span class="text-sm font-medium">Entrega rápida e segura em todo o Brasil</span>
+                    </div>
                 </div>
             </div>
         </div>
